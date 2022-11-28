@@ -1,0 +1,110 @@
+/* use only the available space inside the 400x400 frame */
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: black;
+  overflow: hidden;
+  background: gray;
+  color: #333;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.center {
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+
+.circle {
+	box-sizing: border-box;
+    box-shadow: red;
+	position: absolute;
+	left: 120px;
+	top: 320px;
+	z-index: 5;
+	width: 50px;
+	height: 50px;
+	border: 7px dashed palevioletred;
+	border-radius: 35%;
+	cursor: pointer;
+}
+
+#c2 {
+	left: 180px;
+}
+
+#c3 {
+	left: 240px;
+}
+
+.active {
+	position: absolute;
+	top: 330px;
+	left: 130px;
+	width: 28px;
+	height: 28px;
+	background-color: transparent;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1998/1998627.png");
+    background-size: cover;
+    background-position: center center;
+	border-radius: 50%;
+	z-index: 10;
+	transition: all 1s ease;
+}
+
+#check-1:checked ~ .active {
+	transform: translatex(0px);
+}
+
+#check-2:checked ~ .active {
+	transform: translatex(60px);
+}
+
+#check-3:checked ~ .active {
+	transform: translatex(120px);
+}
+
+.bg {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+    transform: translateX(0px);
+}
+
+.bg-img {
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+}
+
+#check-1:checked ~ .bg {
+	transform: translatex(0px);
+}
+
+#check-2:checked ~ .bg {
+	transform: translatex(-400px);
+}
+
+#check-3:checked ~ .bg {
+	transform: translatex(-800px);
+}
+
+
