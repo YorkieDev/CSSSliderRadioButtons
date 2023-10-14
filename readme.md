@@ -52,4 +52,3 @@ This application/site was created as a submission to a [100daysCSS](https://100d
 
 - Website [yorkiedev.com](https://www.yorkiedev.com)
 - GitHub [@YorkieDev](https://{github.com/YorkieDev})
-- Twitter [@YorkieDev](https://{twitter.com/yorkiedev})
